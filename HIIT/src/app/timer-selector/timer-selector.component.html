@@ -1,0 +1,20 @@
+<form [formGroup]="timerForm">
+    <table cellspaceing="0">
+        <tr>
+            <td>
+                <mat-form-field class="timer-select">
+
+                    <input matInput placeholder="Seconds" type="number" [formControlName]="timerControl">
+                    <mat-hint>Duration in seconds</mat-hint>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field>
+                    <input matInput placeholder="Pump" type="text" [formControlName]="typeControl">
+                    <mat-hint>What are you doing</mat-hint>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+</form>
+<p>font test</p>
