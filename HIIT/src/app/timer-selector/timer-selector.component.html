@@ -1,20 +1,32 @@
-<form [formGroup]="timerForm">
-    <table cellspaceing="0">
+<!-- <form> -->
+<div class="timer-form">
+    <table class="centered " cellspaceing="0">
         <tr>
             <td>
-                <mat-form-field class="timer-select">
+                <mat-form-field id="second-select">
 
-                    <input matInput placeholder="Seconds" type="number" [formControlName]="timerControl">
+                    <input matInput placeholder="Seconds" type="number" [formControl]="timerControl">
                     <mat-hint>Duration in seconds</mat-hint>
                 </mat-form-field>
             </td>
+
             <td>
-                <mat-form-field>
-                    <input matInput placeholder="Pump" type="text" [formControlName]="typeControl">
-                    <mat-hint>What are you doing</mat-hint>
+                <mat-form-field >
+                    <mat-label>Select an Invterval</mat-label>
+                    <mat-select [(value)]="selected">
+                        <mat-option>None</mat-option>
+                        <mat-option value="run">Run</mat-option>
+                        <mat-option value="rest">Rest</mat-option>
+                        <mat-option value="pump">Pump</mat-option>
+                    </mat-select>
                 </mat-form-field>
             </td>
         </tr>
     </table>
-</form>
+</div>
+<button mat-mini-fab color="primary">+</button>
+
+
+
+<!-- </form> -->
 <p>font test</p>

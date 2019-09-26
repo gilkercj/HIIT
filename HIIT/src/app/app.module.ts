@@ -11,6 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
 
 //Components
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { TimerAdderComponent } from './timer-adder/timer-adder.component';
     MatCheckboxModule,
     MatCardModule,
     MatInputModule,
+    MatSelectModule
 
   ],
   providers: [],

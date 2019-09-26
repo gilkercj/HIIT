@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-timer-adder',
+  selector: 'timer-adder',
   templateUrl: './timer-adder.component.html',
   styleUrls: ['./timer-adder.component.css']
 })

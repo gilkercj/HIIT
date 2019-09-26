@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'timer-selector',
@@ -8,10 +8,10 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class TimerSelectorComponent implements OnInit {
 
-  timerForm = new FormGroup({
-    timerControl: new FormControl(''),
-    typeControl: new FormControl('test'),
-  })
+
+    timerControl = new FormControl('');
+    typeControl = new FormControl('test');
+
 
   constructor() { }
 

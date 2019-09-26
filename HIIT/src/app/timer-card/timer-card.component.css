@@ -1,5 +1,5 @@
 .card{
-
-    padding: 10%;
-    margin: 10%;
+    max-width: 60vw;
+    margin: 1vh 20vw;
+    padding: 4vh 0vw;
 }
